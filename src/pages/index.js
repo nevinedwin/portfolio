@@ -35,7 +35,7 @@ export default function Home () {
                   className='flex items-center p-2.5 px-6
                bg-dark text-light  rounded-lg text-lg font-semibold hover:bg-light hover:text-dark 
                border-2 border-solid border-transparent hover:border-dark'
-                  download={true} //for downloading resume uncomment this
+                  // download={true} //for downloading resume uncomment this
                 >
                   Resume <LinkArrow className='w-6 ml-1' />
                 </Link>
@@ -48,7 +48,7 @@ export default function Home () {
                 </Link>
               </div>
             </div>
-            <div className='w-1/2'>
+            <div className='w-1/2 flex px-10 pb-20'>
               <AnimatedImage
                 image={profilePic}
                 name='profilePic'
@@ -60,7 +60,6 @@ export default function Home () {
         <HireMe />
         <div>{/* <Image src={} alt='bulb' className='w-full h-auto'/> */}</div>
       </main>
-      <Footer />
     </>
   )
 }
