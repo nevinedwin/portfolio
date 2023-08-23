@@ -110,3 +110,30 @@ export const skills = [
     y: '0vw'
   }
 ]
+
+export const experience = [
+  {
+    company: 'InApp Information Technologies',
+    companyLink: 'https://www.inapp.com',
+    position: 'Software Engineer',
+    time: '2021 - present',
+    address: '121 Nila, Technopark, Trivandrum, India-695581',
+    work: 'Worked as a Full Stack Developer. Worked Domains are ReactJS, ExpressJS, AWS Serverless with NodeJS'
+  },
+  {
+    company: 'InApp Information Technologies',
+    companyLink: 'https://www.inapp.com',
+    position: 'Software Engineer',
+    time: '2021 - present',
+    address: '121 Nila, Technopark, Trivandrum, India-695581',
+    work: 'Worked as a Full Stack Developer. Worked Domains are ReactJS, ExpressJS, AWS Serverless with NodeJS'
+  },
+  {
+    company: 'InApp Information Technologies',
+    companyLink: 'https://www.inapp.com',
+    position: 'Software Engineer',
+    time: '2021 - present',
+    address: '121 Nila, Technopark, Trivandrum, India-695581',
+    work: 'Worked as a Full Stack Developer. Worked Domains are ReactJS, ExpressJS, AWS Serverless with NodeJS'
+  }
+]
