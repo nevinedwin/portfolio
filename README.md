@@ -37,3 +37,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ########################################################################################################################################################
 
 icons downloaded from : https://icon-sets.iconify.design
+
+convert svg to react component : https://react-svgr.com/playground/
