@@ -1,12 +1,16 @@
 import Layout from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
-import profilePic from '../../public/images/developer-pic-1.png'
+import profilePic from '../../public/images/profilePic.png'
+// import profilePic from '../../public/images/developer-pic-1.png'
 import { homePageContent, homePageHeading } from '@/components/static';
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from '@/components/Icons';
 import Footer from '@/components/Footer';
+import HireMe from '@/components/HireMe';
+import AnimatedImage from '@/components/AnimatedImage';
+// import bulbImg from '../../public/images/'
 
 export default function Home() {
   return (
@@ -18,9 +22,6 @@ export default function Home() {
     <main className='flex items-center text-dark w-full min-h-screen'>
       <Layout className='pt-0'>
         <div className='flex items-center justify-between w-full'>
-          <div className='w-1/2'>
-            <Image src={profilePic} alt='ProfileImg' className='w-full h-auto'/>
-          </div>
           <div className='w-1/2 flex flex-col items-center self-center'>
             <AnimatedText text={homePageHeading} className='!text-6xl !text-left'/>
             <p className='my-4 text-base font-medium'>{homePageContent}</p>
@@ -38,8 +39,15 @@ export default function Home() {
               target={"_blank"}>Contact</Link>
             </div>
           </div>
+          <div className='w-1/2'>
+            <AnimatedImage image={profilePic} name='profilePic' className='w-full h-fit'/>
+          </div>
         </div>
       </Layout>
+      <HireMe/>
+      <div>
+        {/* <Image src={} alt='bulb' className='w-full h-auto'/> */}
+      </div>
     </main>
     <Footer/>
    </>
