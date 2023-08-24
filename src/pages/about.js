@@ -8,6 +8,10 @@ import Image from 'next/image'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
+import Education from '@/components/Education'
+import bulb from '../../public/images/bulb.png'
+import {motion} from 'framer-motion'
+import AnimatedImage from '@/components/AnimatedImage'
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null)
@@ -81,7 +85,19 @@ const about = () => {
           </div>
         </Layout>
         <Skills />
-        <Experience />
+        <div className='flex w-full mb-40'>
+          <div className='flex-1 w-[50%] h-auto justify-center items-center ml-40'>
+            <Experience />
+          </div >
+          <div className='flex-1 w-[50%]'></div>
+        </div>
+        <div className='flex w-full h-auto justify-start items-start mb-40'>
+          {/* <Experience /> */}
+          <div className='flex-1 w-[50%]'></div>
+          <div className='flex-1 w-[50%]'>
+            <Education/>
+          </div>
+        </div>
       </main>
     </>
   )

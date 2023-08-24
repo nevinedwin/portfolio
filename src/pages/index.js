@@ -60,7 +60,7 @@ export default function Home () {
         <HireMe />
         <div>{/* <Image src={} alt='bulb' className='w-full h-auto'/> */}</div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

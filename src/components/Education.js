@@ -1,9 +1,9 @@
 import React, { useRef } from 'react'
-import { experience } from './static'
+import { education } from './static'
 import { motion, useScroll } from 'framer-motion'
 import LiIcon from './LiIcon'
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({ type, name, link, time, place, info }) => {
   const ref = useRef(null);
   return (
     <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[80%]  flex flex-col items-center justify-between'>
@@ -15,55 +15,56 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
           durartion: 0.5,
           type: "spring"
         }}
+        className='self-start'
       >
         <h3 className='capitalize font-bold text-2xl'>
-          {position}
+          {type}
         </h3>
-          <a
-            href={companyLink}
-            target='_blank'
-            className='text-primary capitalize'
-          >
-            @{company}
-          </a>
+        <a
+          href={link}
+          target='_blank'
+          className='text-primary capitalize w-full'
+        >
+          @{name}
+        </a>
         <div className='capitalize font-medium text-dark/75'>
-          {time} | {address}
+          {time} | {place}
         </div>
-        <p className='font-medium w-full'>{work}</p>
+        <p className='font-medium w-full'>{info}</p>
       </motion.div>
     </li>
   )
 }
 
-const Experience = () => {
+const Education = () => {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['start end', 'center start']
+    offset: ['start end', 'center center']
   })
   return (
-    <div className='my-40 flex items-center flex-col justify-center ml-[5%]'>
+    <div className='my-40 '>
       <h2 className='font-bold text-8xl mb-32 w-full text-left'>
-        Experience
+        Education
       </h2>
       <div ref={ref} className='w-full mx-auto relative'>
         <motion.div
           style={{ scaleY: scrollYProgress }}
           className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'
         />
-        <ul className='w-full flex flex-col items-center justify-between ml-12'>
-          {experience.map((eachExperience, index) => {
-            const { position, company, companyLink, time, address, work } =
-              eachExperience
+        <ul className='w-full flex flex-col items-center justify-between ml-16'>
+          {education.map((eachEducation, index) => {
+            const { type, name, link, time, place, info } =
+              eachEducation
             return (
               <Details
                 key={index}
-                position={position}
-                company={company}
-                companyLink={companyLink}
+                type={type}
+                name={name}
+                link={link}
                 time={time}
-                address={address}
-                work={work}
+                place={place}
+                info={info}
               />
             )
           })}
@@ -73,4 +74,4 @@ const Experience = () => {
   )
 }
 
-export default Experience
+export default Education

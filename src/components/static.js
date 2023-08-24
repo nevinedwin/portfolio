@@ -120,20 +120,47 @@ export const experience = [
     address: '121 Nila, Technopark, Trivandrum, India-695581',
     work: 'Worked as a Full Stack Developer. Worked Domains are ReactJS, ExpressJS, AWS Serverless with NodeJS'
   },
+  // {
+  //   company: 'InApp Information Technologies',
+  //   companyLink: 'https://www.inapp.com',
+  //   position: 'Software Engineer',
+  //   time: '2021 - present',
+  //   address: '121 Nila, Technopark, Trivandrum, India-695581',
+  //   work: 'Worked as a Full Stack Developer. Worked Domains are ReactJS, ExpressJS, AWS Serverless with NodeJS'
+  // },
+  // {
+  //   company: 'InApp Information Technologies',
+  //   companyLink: 'https://www.inapp.com',
+  //   position: 'Software Engineer',
+  //   time: '2021 - present',
+  //   address: '121 Nila, Technopark, Trivandrum, India-695581',
+  //   work: 'Worked as a Full Stack Developer. Worked Domains are ReactJS, ExpressJS, AWS Serverless with NodeJS'
+  // }
+]
+
+export const education = [
   {
-    company: 'InApp Information Technologies',
-    companyLink: 'https://www.inapp.com',
-    position: 'Software Engineer',
-    time: '2021 - present',
-    address: '121 Nila, Technopark, Trivandrum, India-695581',
-    work: 'Worked as a Full Stack Developer. Worked Domains are ReactJS, ExpressJS, AWS Serverless with NodeJS'
+    type: "Bachelor of Technology (B.Tech)",
+    time: "2017 - 2021",
+    name: "Government Engineering College Barton Hill, Trivandrum (GECBH)",
+    link: "http://www.gecbh.ac.in/",
+    place: "Trivandrum, Kerala, India - 695035",
+    info: "Electronics And Communication Engineering. CGPA - 8.45"
   },
   {
-    company: 'InApp Information Technologies',
-    companyLink: 'https://www.inapp.com',
-    position: 'Software Engineer',
-    time: '2021 - present',
-    address: '121 Nila, Technopark, Trivandrum, India-695581',
-    work: 'Worked as a Full Stack Developer. Worked Domains are ReactJS, ExpressJS, AWS Serverless with NodeJS'
+    type: "Higher Secondary Education (HSE)",
+    time: "2015 - 2017",
+    name: "ST Joseph's HSS, Trivandrum (GECBH)",
+    link: "https://www.stjosephshsstvpm.org/",
+    place: "Trivandrum, Kerala, India - 695001",
+    info: "Bio-Maths. Score - 94.5%"
+  },
+  {
+    type: "SSLC",
+    time: "2016 - 2015",
+    name: "ST Mary's HSS, Vettucaud",
+    link: "https://www.facebook.com/people/StMarys-Higher-Secondary-school-Vettucaud/100054392056513/",
+    place: "Trivandrum, Kerala, India - 695021",
+    info: "Score - 98%"
   }
 ]
