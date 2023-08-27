@@ -6,7 +6,7 @@ import LiIcon from './LiIcon'
 const Details = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null);
   return (
-    <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[80%]  flex flex-col items-center justify-between'>
+    <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[80%]  flex flex-col items-center justify-between dark:text-light'>
       <LiIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
@@ -22,11 +22,11 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
           <a
             href={companyLink}
             target='_blank'
-            className='text-primary capitalize'
+            className='text-primary dark:text-primaryDark capitalize'
           >
             @{company}
           </a>
-        <div className='capitalize font-medium text-dark/75'>
+        <div className='capitalize font-medium text-dark/75 dark:text-light/75'>
           {time} | {address}
         </div>
         <p className='font-medium w-full'>{work}</p>
@@ -49,7 +49,7 @@ const Experience = () => {
       <div ref={ref} className='w-full mx-auto relative'>
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'
+          className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top'
         />
         <ul className='w-full flex flex-col items-center justify-between ml-12'>
           {experience.map((eachExperience, index) => {

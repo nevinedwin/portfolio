@@ -25,7 +25,11 @@ const AnimatedImage = ({ image, name = 'img', className = '' }) => {
       animate='animate'
       className='w-full h-auto flex justify-center items-center'
     >
-      <Image src={image} alt={name} className={`w-full h-full ${className}`} />
+      <Image src={image} alt={name} className={`w-full h-full ${className}`} 
+      priority
+      sizes='(max-width: 768px) 100vw,
+      (max-width: 1200px) 50vw, 
+      50vw' />
     </motion.div>
   )
 }

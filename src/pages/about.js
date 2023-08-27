@@ -10,7 +10,7 @@ import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 import bulb from '../../public/images/bulb.png'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import AnimatedImage from '@/components/AnimatedImage'
 
 const AnimatedNumbers = ({ value }) => {
@@ -42,12 +42,12 @@ const about = () => {
         <title>Nevin Edwin | About Page</title>
         <meta name='' content='MERN Stack Developer' />
       </Head>
-      <main className='flex w-full flex-col items-center justify-center'>
+      <main className='flex w-full flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
           <AnimatedText text={aboutHeading} className='mb-16' />
           <div className='grid w-full grid-cols-8 gap-16'>
             <div className='col-span-3 flex flex-col items-start justify-start'>
-              <h2 className='mb-4 text-lg font-bold uppercase text-dark opacity-75'>
+              <h2 className='mb-4 text-lg font-bold uppercase text-dark dark:text-light opacity-75'>
                 About Me
               </h2>
               {aboutContent.map((eachItem, index) => (
@@ -58,13 +58,17 @@ const about = () => {
             </div>
             <div
               className='col-span-3 relative h-max rounded-2xl border-2 border-solid 
-            border-dark bg-light p-8'
+            border-dark dark:border-light bg-light dark:bg-dark p-8'
             >
-              <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
+              <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-white' />
               <Image
                 src={profilePic}
                 alt='Nevin Edwin'
                 className='w-full h-auto rounded-2xl'
+                priority
+                sizes='(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw, 
+                33vw'
               />
             </div>
             <div className='col-span-2 flex flex-col items-end justify-between'>
@@ -76,7 +80,7 @@ const about = () => {
                   <span className='inline-block text-7xl font-bold'>
                     <AnimatedNumbers value={eachStatus.number} />+
                   </span>
-                  <h2 className='text-xl font-medium capitalize text-dark/75'>
+                  <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'>
                     {eachStatus.content}
                   </h2>
                 </div>
@@ -93,7 +97,7 @@ const about = () => {
         </div>
         <div className='flex w-full h-auto justify-end items-end mb-40'>
           <div className='w-[50%]'>
-            <Education/>
+            <Education />
           </div>
         </div>
       </main>

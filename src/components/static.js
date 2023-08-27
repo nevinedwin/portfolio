@@ -1,5 +1,8 @@
 import { GithubIcon, LeetCodeIcon, LinkedInIcon, TwitterIcon } from './Icons';
 import projectImage from '../../public/images/projects/crypto-screener-cover-image.jpg'
+import article1 from '../../public/images/articles/article-1.png';
+import article2 from '../../public/images/articles/article-2.jpg';
+import article3 from '../../public/images/articles/article-3.png';
 
 export const IconData = [
   {
@@ -174,5 +177,48 @@ export const projectsData = [
     image: projectImage,
     link: "/",
     github: "/"
+  },
+  {
+    title: "Courageous Conversation",
+    type: "Featured Project",
+    summary: "Worked in ReactJS.",
+    image: projectImage,
+    link: "/",
+    github: "/"
+  },
+  {
+    title: "Courageous Conversation",
+    type: "Featured Project",
+    summary: "Worked in ReactJS.",
+    image: projectImage,
+    link: "/",
+    github: "/"
   }
 ] 
+
+export const articleContent = [
+  {
+    title: "Build A Custom Pagination Component In Reactjs From Scratch",
+    img: article1,
+    summary: "Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project.",
+    link: "/",
+    time: "9 min read",
+    date: "21 March 2023"
+  },
+  {
+    title: "Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens",
+    img: article2,
+    summary: "Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience.",
+    link: "/",
+    time: "10 min read",
+    date: "2 July 2023"
+  },
+  {
+    title: "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling",
+    img: article3,
+    summary: "Learn how to build a custom pagination component in ReactJS from scratch.",
+    link: "/",
+    time: "9 min read",
+    date: "12 December 2023"
+  }
+]

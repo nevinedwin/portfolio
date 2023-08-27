@@ -411,12 +411,11 @@ export const CircularText = ({ className, ...rest }) => (
     width='1080.000000pt'
     height='1080.000000pt'
     viewBox='0 0 1080.000000 1080.000000'
-    className={`w-full h-auto ${className}`}
+    className={`w-full h-auto ${className} `}
     {...rest}
   >
     <g
       transform='translate(0.000000,1080.000000) scale(0.100000,-0.100000)'
-      fill='#000000'
       stroke='none'
     >
       <path

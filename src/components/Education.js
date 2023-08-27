@@ -23,11 +23,11 @@ const Details = ({ type, name, link, time, place, info }) => {
         <a
           href={link}
           target='_blank'
-          className='text-primary capitalize w-full'
+          className='text-primary dark:text-primaryDark capitalize w-full'
         >
           @{name}
         </a>
-        <div className='capitalize font-medium text-dark/75'>
+        <div className='capitalize font-medium text-dark/75 dark:text-light/75'>
           {time} | {place}
         </div>
         <p className='font-medium w-full'>{info}</p>
@@ -43,14 +43,14 @@ const Education = () => {
     offset: ['start end', 'center center']
   })
   return (
-    <div className='my-40 '>
+    <div className='my-40 dark:text-light'>
       <h2 className='font-bold text-8xl mb-32 w-full text-left'>
         Education
       </h2>
       <div ref={ref} className='w-full mx-auto relative'>
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top '
+          className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top '
         />
         <ul className='w-full flex flex-col items-center justify-between pl-12'>
           {education.map((eachEducation, index) => {
