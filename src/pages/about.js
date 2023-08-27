@@ -91,10 +91,8 @@ const about = () => {
           </div >
           <div className='flex-1 w-[50%]'></div>
         </div>
-        <div className='flex w-full h-auto justify-start items-start mb-40'>
-          {/* <Experience /> */}
-          <div className='flex-1 w-[50%]'></div>
-          <div className='flex-1 w-[50%]'>
+        <div className='flex w-full h-auto justify-end items-end mb-40'>
+          <div className='w-[50%]'>
             <Education/>
           </div>
         </div>

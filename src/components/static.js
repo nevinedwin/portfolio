@@ -1,4 +1,5 @@
-import { GithubIcon, LeetCodeIcon, LinkedInIcon, TwitterIcon } from './Icons'
+import { GithubIcon, LeetCodeIcon, LinkedInIcon, TwitterIcon } from './Icons';
+import projectImage from '../../public/images/projects/crypto-screener-cover-image.jpg'
 
 export const IconData = [
   {
@@ -164,3 +165,14 @@ export const education = [
     info: "Score - 98%"
   }
 ]
+
+export const projectsData = [
+  {
+    title: "Courageous Conversation",
+    type: "Featured Project",
+    summary: "Worked in ReactJS.",
+    image: projectImage,
+    link: "/",
+    github: "/"
+  }
+] 

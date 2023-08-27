@@ -50,9 +50,9 @@ const Education = () => {
       <div ref={ref} className='w-full mx-auto relative'>
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'
+          className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top '
         />
-        <ul className='w-full flex flex-col items-center justify-between ml-16'>
+        <ul className='w-full flex flex-col items-center justify-between pl-12'>
           {education.map((eachEducation, index) => {
             const { type, name, link, time, place, info } =
               eachEducation
