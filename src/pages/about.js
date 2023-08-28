@@ -44,7 +44,7 @@ const about = () => {
       </Head>
       <main className='flex w-full flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
-          <AnimatedText text={aboutHeading} className='mb-16' />
+          <AnimatedText text={aboutHeading} className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl' />
           <div className='grid w-full grid-cols-8 gap-16'>
             <div className='col-span-3 flex flex-col items-start justify-start'>
               <h2 className='mb-4 text-lg font-bold uppercase text-dark dark:text-light opacity-75'>
