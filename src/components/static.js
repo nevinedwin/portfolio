@@ -1,5 +1,8 @@
 import { GithubIcon, LeetCodeIcon, LinkedInIcon, TwitterIcon } from './Icons';
 import projectImage from '../../public/images/projects/crypto-screener-cover-image.jpg'
+import expressbpImg from '../../public/images/projects/express-bp-poster.png'
+import tictaktoeImg from '../../public/images/projects/ticTacToe.png'
+import memeGeneratorImg from '../../public/images/projects/memeGeneratorImg.png'
 import article1 from '../../public/images/articles/article-1.png';
 import article2 from '../../public/images/articles/article-2.jpg';
 import article3 from '../../public/images/articles/article-3.png';
@@ -32,9 +35,9 @@ export const homePageContent =
 export const aboutHeading = 'Passion Fuels Purpose!'
 
 export const aboutContent = [
-  "Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, and user-centered digital experiences. With 4 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.",
-  "I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.",
-  "Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project."
+  "🚀 Hey, I'm Nevin Edwin, a results-driven software engineer with over 2+ years of experience specializing in the MERN stack and AWS technologies. From crafting resilient web applications to diving into serverless architectures, I've honed my skills in MongoDB, Express, React, Node.js, TypeScript, and AWS serverless components like Lambda, Step Functions, and Cognito.",
+  "🏆 In the tech realm, I've contributed significantly to workflow efficiency using Step Functions, developed custom reports for client status, and published an NPM Package for ExpressJS named 'express-bp.' I bring precision to UI with Material UI, design efficient microservices architecture, and embrace DevOps best practices for seamless development and deployment using Git and GitLab CI/CD.",
+  "💡 Beyond coding, I'm a tech enthusiast who thrives on challenges. Proficient in JavaScript, Python, HTML, CSS, and familiar with tools like Elasticsearch and Bootstrap, I am equally at ease in Linux and Windows environments. Let's connect, discuss the latest tech trends, and together, let's build a brighter digital future!"
 ]
 
 export const aboutStatus = [
@@ -54,65 +57,145 @@ export const aboutStatus = [
 
 export const skills = [
   {
-    skill: 'CSS',
+    skill: 'CSSs',
     x: '5vw',
-    y: '-10vw'
+    y: '-23vw'
   },
   {
     skill: 'HTML',
-    x: '-20vw',
-    y: '2vw'
+    x: '25vw',
+    y: '-20vw'
   },
   {
     skill: 'JavaScript',
-    x: '10vw',
+    x: '13vw',
     y: '-20vw'
-  },
-  {
-    skill: 'AWS Serverless',
-    x: '9vw',
-    y: '10vw'
   },
   {
     skill: 'NodeJS',
-    x: '-8vw',
-    y: '-10vw'
+    x: '1vw',
+    y: '-18vw'
   },
   {
-    skill: 'ReactJS',
-    x: '10vw',
-    y: '20vw'
-  },
-  {
-    skill: 'ExpressJS',
-    x: '-12vw',
-    y: '-20vw'
-  },
-  {
-    skill: 'CSS',
-    x: '-12vw',
-    y: '10vw'
-  },
-  {
-    skill: 'CSS',
+    skill: 'BunJS',
     x: '15vw',
     y: '-15vw'
   },
   {
-    skill: 'CSS',
-    x: '15vw',
-    y: '0vw'
-  },
-  {
-    skill: 'CSS',
+    skill: 'Typescript',
     x: '5vw',
     y: '-10vw'
   },
   {
-    skill: 'CSS',
+    skill: 'ReactJS',
+    x: '-20vw',
+    y: '-20vw'
+  },
+  {
+    skill: 'ReactTS',
+    x: '-25vw',
+    y: '-15vw'
+  },
+  {
+    skill: 'ExpressJS',
+    x: '-12vw',
+    y: '-15vw'
+  },
+  {
+    skill: 'NextJS',
+    x: '-18vw',
+    y: '-10vw'
+  },
+  {
+    skill: 'AWS Serverless Tools',
+    x: '9vw',
+    y: '5vw'
+  },
+  {
+    skill: 'AWS Cognito',
+    x: '15vw',
+    y: '20vw'
+  },
+  {
+    skill: 'AWS Lambda',
+    x: '1vw',
+    y: '10vw'
+  },
+  {
+    skill: 'AWS S3',
+    x: '1vw',
+    y: '15vw'
+  },
+  {
+    skill: 'AWS ApiGateWay',
+    x: '1vw',
+    y: '20vw'
+  },
+  {
+    skill: 'AWS Cloudformation',
+    x: '40vw',
+    y: '8vw'
+  },
+  {
+    skill: 'Serverless Application Model SAM',
+    x: '25vw',
+    y: '6vw'
+  },
+  {
+    skill: 'AWS DynamoDB',
+    x: '30vw',
+    y: '20vw'
+  },
+  {
+    skill: 'AWS SES',
+    x: '10vw',
+    y: '13vw'
+  },
+  {
+    skill: 'AWS SQS',
+    x: '12vw',
+    y: '25vw'
+  },
+  {
+    skill: 'AWS SNS',
+    x: '17vw',
+    y: '16vw'
+  },
+  {
+    skill: 'AWS Pinpoint',
+    x: '25vw',
+    y: '10vw'
+  },
+  {
+    skill: 'AWS CloudWatch',
+    x: '30vw',
+    y: '15vw'
+  },
+  {
+    skill: 'AWS Cloudfront',
+    x: '-10vw',
+    y: '15vw'
+  },
+  {
+    skill: 'Material UI',
     x: '-30vw',
     y: '0vw'
-  }
+  },
+  {
+    skill: 'Tailwind CSS',
+    x: '-25vw',
+    y: '6vw'
+  },
+  {
+    skill: 'Bootstrap',
+    x: '-35vw',
+    y: '8vw'
+  },
+  {
+    skill: 'Python',
+    x: '30vw',
+    y: '-6vw'
+  },
 ]
 
 export const experience = [
@@ -171,54 +254,54 @@ export const education = [
 
 export const projectsData = [
   {
-    title: "Courageous Conversation",
-    type: "Featured Project",
-    summary: "Worked in ReactJS.",
-    image: projectImage,
-    link: "/",
-    github: "/"
+    title: "Express Boiler Plate CLI Tool",
+    type: "NPM Package",
+    summary: "Created and Published an NPM Package for creating Express boiler plate, db Configuration and Automated module creation. This package is created using Typescript.",
+    image: expressbpImg,
+    link: "https://www.npmjs.com/package/express-bp",
+    github: "https://github.com/nevinedwin/express-cli-tool"
   },
   {
-    title: "Courageous Conversation",
-    type: "Featured Project",
-    summary: "Worked in ReactJS.",
-    image: projectImage,
-    link: "/",
-    github: "/"
+    title: "Tic Tac Toe",
+    type: "Learning Project",
+    summary: "A simple Tic Tac Toe Application. Created Using React JS",
+    image: tictaktoeImg,
+    link: "https://nevinedwin.github.io/tictaktoe/",
+    github: "https://github.com/nevinedwin/tictaktoe"
   },
   {
-    title: "Courageous Conversation",
-    type: "Featured Project",
-    summary: "Worked in ReactJS.",
-    image: projectImage,
-    link: "/",
-    github: "/"
+    title: "Meme Generator",
+    type: "Learning Project",
+    summary: "A simple Meme Generator Application. Created Using React JS",
+    image: memeGeneratorImg,
+    link: "https://nevinedwin.github.io/memegenerator/",
+    github: "https://github.com/nevinedwin/memegenerator"
   }
 ] 
 
 export const articleContent = [
-  {
-    title: "Build A Custom Pagination Component In Reactjs From Scratch",
-    img: article1,
-    summary: "Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project.",
-    link: "/",
-    time: "9 min read",
-    date: "21 March 2023"
-  },
-  {
-    title: "Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens",
-    img: article2,
-    summary: "Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience.",
-    link: "/",
-    time: "10 min read",
-    date: "2 July 2023"
-  },
-  {
-    title: "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling",
-    img: article3,
-    summary: "Learn how to build a custom pagination component in ReactJS from scratch.",
-    link: "/",
-    time: "9 min read",
-    date: "12 December 2023"
-  }
+  // {
+  //   title: "Build A Custom Pagination Component In Reactjs From Scratch",
+  //   img: article1,
+  //   summary: "Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project.",
+  //   link: "/",
+  //   time: "9 min read",
+  //   date: "21 March 2023"
+  // },
+  // {
+  //   title: "Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens",
+  //   img: article2,
+  //   summary: "Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience.",
+  //   link: "/",
+  //   time: "10 min read",
+  //   date: "2 July 2023"
+  // },
+  // {
+  //   title: "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling",
+  //   img: article3,
+  //   summary: "Learn how to build a custom pagination component in ReactJS from scratch.",
+  //   link: "/",
+  //   time: "9 min read",
+  //   date: "12 December 2023"
+  // }
 ]

@@ -32,7 +32,7 @@ export default function Home () {
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>{homePageContent}</p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link
-                  href='/Resume.pdf'
+                  href='/resume.pdf'
                   target={'_blank'}
                   className='flex items-center p-2.5 px-6
                bg-dark text-light  rounded-lg text-lg font-semibold hover:bg-light hover:text-dark 

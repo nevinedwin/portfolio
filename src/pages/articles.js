@@ -123,7 +123,7 @@ const Articles = () => {
 							})
 						}
 					</ul>
-					<h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2>
+					<h2 className='font-bold text-4xl w-full text-center my-16 mt-32'> Article is Empty</h2>
 					<ul>
 						{
 							articleContent.map((ecahArticle, index) => {

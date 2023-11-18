@@ -20,15 +20,15 @@ const FeaturedProject = ({ type, title, summary, image = "", link, github }) => 
         className='w-1/2 cursor-pointer overflow-hidden rounded-lg'
       >
         <FramerImage src={image} alt={title} className='w-full h-auto'
-          whileHover={{scale: 1.05}}
+          whileHover={{ scale: 1.05 }}
           transition={{
-              duration: 0.2
+            duration: 0.2
           }}
           priority
           sizes='(max-width: 768px) 100vw,
           (max-width: 1200px) 50vw, 
           50vw'
-         />
+        />
       </Link>
       <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
         <span className='text-primary dark:text-primaryDark font-medium text-xl'>{type}</span>
@@ -55,15 +55,15 @@ const Project = ({ title, type, image, github, link, }) => {
         className='w-full cursor-pointer overflow-hidden rounded-lg'
       >
         <FramerImage src={image} alt={title} className='w-full h-auto'
-        whileHover={{scale: 1.05}}
-        transition={{
+          whileHover={{ scale: 1.05 }}
+          transition={{
             duration: 0.2
-        }}
-        priority
-        sizes='(max-width: 768px) 100vw,
+          }}
+          priority
+          sizes='(max-width: 768px) 100vw,
         (max-width: 1200px) 50vw, 
         50vw'
-         />
+        />
       </Link>
       <div className='w-full flex flex-col items-start justify-between mt-4'>
         <span className='text-primary dark:text-primaryDark font-medium text-xl'>{type}</span>
@@ -103,44 +103,20 @@ const Projects = () => {
             </div>
             {
               projectsData.map((eachProject, index) => {
-                return (
-                  <div className='col-span-6' key={index}>
-                    <Project
-                      title={eachProject.title}
-                      type={eachProject.type}
-                      summary={eachProject.summary}
-                      link={eachProject.link}
-                      github={eachProject.github}
-                      image={eachProject.image}
-                    />
-                  </div>
-                )
-              })
-            }
-            <div className='col-span-12'>
-              <FeaturedProject
-                title={projectsData[0].title}
-                type={projectsData[0].type}
-                summary={projectsData[0].summary}
-                link={projectsData[0].link}
-                github={projectsData[0].github}
-                image={projectsData[0].image}
-              />
-            </div>
-            {
-              projectsData.map((eachProject, index) => {
-                return (
-                  <div className='col-span-6' key={index}>
-                    <Project
-                      title={eachProject.title}
-                      type={eachProject.type}
-                      summary={eachProject.summary}
-                      link={eachProject.link}
-                      github={eachProject.github}
-                      image={eachProject.image}
-                    />
-                  </div>
-                )
+                if (index !== 0) {
+                  return (
+                    <div className='col-span-6' key={index}>
+                      <Project
+                        title={eachProject.title}
+                        type={eachProject.type}
+                        summary={eachProject.summary}
+                        link={eachProject.link}
+                        github={eachProject.github}
+                        image={eachProject.image}
+                      />
+                    </div>
+                  )
+                }
               })
             }
           </div>
