@@ -9,19 +9,19 @@ import article3 from '../../public/images/articles/article-3.png';
 
 export const IconData = [
   {
-    href: 'https://twitter.com',
+    href: 'https://x.com/NevinEdwin',
     component: <TwitterIcon />
   },
   {
-    href: 'https://github.com',
+    href: 'https://github.com/nevinedwin',
     component: <GithubIcon />
   },
   {
-    href: 'https://linkedin.com',
+    href: 'https://linkedin.com/in/nevinedwin',
     component: <LinkedInIcon />
   },
   {
-    href: 'https://leetcode.com',
+    href: 'https://leetcode.com/u/nevinedwin100/',
     component: <LeetCodeIcon />
   }
 ]
@@ -35,7 +35,7 @@ export const homePageContent =
 export const aboutHeading = 'Passion Fuels Purpose!'
 
 export const aboutContent = [
-  "🚀 Hey, I'm Nevin Edwin, a results-driven software engineer with over 2+ years of experience specializing in the MERN stack and AWS technologies. From crafting resilient web applications to diving into serverless architectures, I've honed my skills in MongoDB, Express, React, Node.js, TypeScript, and AWS serverless components like Lambda, Step Functions, and Cognito.",
+  "🚀 Hey, I'm Nevin Edwin, a results-driven software engineer with over 3+ years of experience specializing in the MERN stack and AWS technologies. From crafting resilient web applications to diving into serverless architectures, I've honed my skills in MongoDB, Express, React, Node.js, TypeScript, and AWS serverless components like Lambda, Step Functions, and Cognito.",
   "🏆 In the tech realm, I've contributed significantly to workflow efficiency using Step Functions, developed custom reports for client status, and published an NPM Package for ExpressJS named 'express-bp.' I bring precision to UI with Material UI, design efficient microservices architecture, and embrace DevOps best practices for seamless development and deployment using Git and GitLab CI/CD.",
   "💡 Beyond coding, I'm a tech enthusiast who thrives on challenges. Proficient in JavaScript, Python, HTML, CSS, and familiar with tools like Elasticsearch and Bootstrap, I am equally at ease in Linux and Windows environments. Let's connect, discuss the latest tech trends, and together, let's build a brighter digital future!"
 ]
@@ -256,9 +256,9 @@ export const projectsData = [
   {
     title: "Express Boiler Plate CLI Tool",
     type: "NPM Package",
-    summary: "Created and Published an NPM Package for creating Express boiler plate, db Configuration and Automated module creation. This package is created using Typescript.",
+    summary: "Created and Published an npm package which is an Express CLI Tool for creating Express boiler plate, db Configuration and Automated module creation. This package is created using Typescript.",
     image: expressbpImg,
-    link: "https://www.npmjs.com/package/express-bp",
+    link: "https://www.npmjs.com/package/express-cli-tool",
     github: "https://github.com/nevinedwin/express-cli-tool"
   },
   {
